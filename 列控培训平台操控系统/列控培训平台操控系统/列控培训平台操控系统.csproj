@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7ACCEDDA-680D-4F41-AA8F-EC99388AEF66}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>列控培训平台操控系统</RootNamespace>
+    <AssemblyName>列控培训平台操控系统</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="临时限速\临时限速界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="临时限速\临时限速界面.Designer.cs">
+      <DependentUpon>临时限速界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="临时限速\管理临时限速.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="临时限速\管理临时限速.Designer.cs">
+      <DependentUpon>管理临时限速.cs</DependentUpon>
+    </Compile>
+    <Compile Include="临时限速类\TSRS.cs" />
+    <Compile Include="列车\Train.cs" />
+    <Compile Include="列车初始化\列车初始化界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="列车初始化\列车初始化界面.Designer.cs">
+      <DependentUpon>列车初始化界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="列车\管理列车.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="列车\管理列车.Designer.cs">
+      <DependentUpon>管理列车.cs</DependentUpon>
+    </Compile>
+    <Compile Include="初始信息\InitializationInformation.cs" />
+    <Compile Include="区间\SectionC.cs" />
+    <Compile Include="区间\SectionA.cs" />
+    <Compile Include="区间\SectionB.cs" />
+    <Compile Include="区间\SectionD.cs" />
+    <Compile Include="操控界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="操控界面.Designer.cs">
+      <DependentUpon>操控界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="操控界面_picturebox事件\鼠标按下、按起.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="操控界面_picturebox事件\鼠标右键事件.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="操控界面_picturebox事件\鼠标移动、点击.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="操控界面_timer事件\刷进路占用.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="操控界面_toolstripbutton事件\按钮响应.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询\查询界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询\查询界面.Designer.cs">
+      <DependentUpon>查询界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车站\StationE.cs" />
+    <Compile Include="车站\DrawingInformation.cs" />
+    <Compile Include="车站\StationA.cs" />
+    <Compile Include="车站\StationB.cs" />
+    <Compile Include="车站\StationC.cs" />
+    <Compile Include="车站\StationD.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="临时限速\临时限速界面.resx">
+      <DependentUpon>临时限速界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="临时限速\管理临时限速.resx">
+      <DependentUpon>管理临时限速.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="列车初始化\列车初始化界面.resx">
+      <DependentUpon>列车初始化界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="列车\管理列车.resx">
+      <DependentUpon>管理列车.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="操控界面.resx">
+      <DependentUpon>操控界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询\查询界面.resx">
+      <DependentUpon>查询界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\train.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

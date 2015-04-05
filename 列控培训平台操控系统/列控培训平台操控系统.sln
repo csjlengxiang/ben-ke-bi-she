@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "列控培训平台操控系统", "列控培训平台操控系统\列控培训平台操控系统.csproj", "{7ACCEDDA-680D-4F41-AA8F-EC99388AEF66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7ACCEDDA-680D-4F41-AA8F-EC99388AEF66}.Debug|x86.ActiveCfg = Debug|x86
+		{7ACCEDDA-680D-4F41-AA8F-EC99388AEF66}.Debug|x86.Build.0 = Debug|x86
+		{7ACCEDDA-680D-4F41-AA8F-EC99388AEF66}.Release|x86.ActiveCfg = Release|x86
+		{7ACCEDDA-680D-4F41-AA8F-EC99388AEF66}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
